@@ -1,0 +1,1 @@
+export const bodyW = "w-[1520px] mx-auto";

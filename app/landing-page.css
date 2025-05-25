@@ -1,0 +1,39 @@
+.abilitati-tehnice-label {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.skill-bar {
+    width: 136px;
+    height: 9px;
+    border-radius: 50px;
+}
+
+.passed-level-bar {
+    background-color: var(--code-detail-text-color);
+}
+
+.level-label {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+}
+
+.not-current-level-label {
+    color: var(--white-color);
+}
+
+.current-level-bar {
+    background-color: var(--primary-color);
+}
+
+.current-level-label {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.not-reached-level-bar {
+    border: 2px solid var(--code-detail-text-color);
+}
