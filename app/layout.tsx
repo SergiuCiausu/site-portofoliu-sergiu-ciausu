@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { bodyW } from "@/app/variables/variables";
 import Anchor from "./components/NavAnchor";
 import FadeInOnLoad from "./components/FadeInOnLoad";
+import Ending from "./components/Ending";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
               <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
           </div>
           {children}
+          <Ending />
       </body>
     </html>
   );

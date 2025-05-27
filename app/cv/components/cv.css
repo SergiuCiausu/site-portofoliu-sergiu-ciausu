@@ -1,0 +1,38 @@
+.chenar-cv {
+    padding: 128px;
+    border: 4px solid var(--primary-color);
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 2px var(--primary-color);
+}
+
+.chenar-cv-h3 {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.chenar-p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    color: var(--white-color)
+}
+
+.chenar-p-label {
+    color: var(--code-detail-text-color);
+}
+
+.chenar-cv-poza {
+    border-radius: 50%;
+    width: 224px;
+    height: 224px;
+}
+
+.cv-big-link {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: var(--white-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}

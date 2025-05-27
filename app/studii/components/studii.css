@@ -1,0 +1,32 @@
+.clasa-p {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.scoala-h4 {
+    font-family: var(--primary-font);
+    font-size: 32px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.bullet-li {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.studii-bar {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    height: 1400px;
+}
+
+.studii-cerc {
+    background-color: var(--code-detail-text-color);
+    border-radius: 50%;
+    width: 32px  !important;
+    height: 32px;
+    flex-grow: 1;
+}

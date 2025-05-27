@@ -1,12 +1,11 @@
+"use client";
+
 import React from 'react'
-import { bodyW } from '../variables/variables'
-import Anchor from '../components/Anchor'
-import { Typewriter } from "react-simple-typewriter";
+import { bodyW } from '@/app/variables/variables'
+import Anchor from '@/app/components/Anchor'
 import FadeInOnLoad from "@/app/components/FadeInOnLoad";
 
-const Hero = ({ elementId }: { elementId: string }) => {
-
-    const cuvinteEvidentiator = ["programator", "designer web", "designer grafic", "editor video", "iubitor de fitness", "fotograf"]
+const Hero = ({ htext, evtext, ptext, btext, elementId }: { htext: string, evtext: string, ptext: string, btext: string, elementId: string }) => {
 
     const ctaBtnClick = () => {
         const target = document.getElementById(elementId);
@@ -32,26 +31,16 @@ const Hero = ({ elementId }: { elementId: string }) => {
                 <h1
                     className="titlu text-center">
                         <div
-                            className="flex flex-col">
-                            <span>Eu sunt <strong>Sergiu</strong> și sunt</span>
-                            <span className="evidentiator-titlu ml-16">
-                                <Typewriter
-                                    words={cuvinteEvidentiator}
-                                    loop={true}
-                                    cursor
-                                    cursorStyle="_"
-                                    typeSpeed={70}
-                                    deleteSpeed={50}
-                                    delaySpeed={2000}
-                                />
-                            </span>
+                            className="flex justify-center items-end gap-4">
+                            <span className="evidentiator-titlu">{evtext}</span>
+                            <span><strong>{htext}</strong></span>   
                         </div>             
                 </h1>
                 <p
                     className="p-subtitlu">
-                        Am 19 ani, am absolvit Colegiul Național „Mircea cel Bătrân” din Constanța și acesta este portofoliul meu de web design & development! Păstrez cât mai scurtă descrierea, prefer să-mi las faptele să vorbească :{`>`}
+                        {ptext}
                 </p>
-                <button className="hero-cta-btn" onClick={ctaBtnClick}>Vezi portofoliu</button>
+                <button className="hero-cta-btn" onClick={ctaBtnClick}>{btext}</button>
                 <Anchor text="header" type="end"/>
         </div>
             <div

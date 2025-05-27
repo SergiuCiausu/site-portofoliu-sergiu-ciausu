@@ -1,11 +1,11 @@
 import React from 'react'
 import Anchor from './Anchor'
-import { bodyW } from '../variables/variables'
+import { bodyW } from '@/app/variables/variables'
 
-const H3 = ({ text }: { text: string }) => {
+const Heading = ({ text }: { text: string }) => {
   return (
     <div
-        className={`${bodyW} text-center my-16`}>
+        className={`${bodyW} ${text === "Despre mine" ? "mt-24 mb-4" : "my-16"}`}>
         <Anchor text="header" />
         <h3>{text}</h3>
         <div className="mt-1"><Anchor text="header" type="end" /></div>
@@ -13,4 +13,4 @@ const H3 = ({ text }: { text: string }) => {
   )
 }
 
-export default H3
+export default Heading

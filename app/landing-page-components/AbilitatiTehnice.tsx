@@ -90,7 +90,7 @@ const AbilitatiTehnice = () => {
                                 className="flex gap-6">
                                 {niveluri.map((nivel, indexNivel) => (
                                     <div
-                                        key={index}
+                                        key={indexNivel}
                                         className="flex flex-col gap-2 items-center">
                                         <span className={`level-label ${indexNivel === limbaj.idNivel ? "current-" : "not-current-"}level-label`}>{nivel}</span>
                                         <div

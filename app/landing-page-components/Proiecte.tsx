@@ -13,35 +13,35 @@ const Proiecte = () => {
             descriere: "Website de „smart study” pentru elevii de liceu, cu toată materia prevăzută în programa școlară, pentru fiecare profil și specializare, cu elemente ce facilitează parcurgerea lecțiilor.",
             eticheta: "Proiect mare",
             imagine: "/edu-docs-banner.png",
-            link: "edu-docs"
+            link: "/edu-docs"
         },
         {
             titlu: "Case Smart",
             descriere: "Website de e-Commerce, ce vinde întrerupătoare, prize și alte produse electrice, fiind o refacere, pentru acest portofoliu, a site-ului deja existent.",
             eticheta: "Proiect complex",
             imagine: "/case-smart-banner.png",
-            link: "case-smart"
+            link: "/case-smart"
         },
         {
             titlu: "Make Me Fit",
             descriere: "Website de prezentare a cursurilor, axat mai mult pe design web și nu pe conținutul cursurilor sau funcționalități complexe.",
             eticheta: "Proiect estetic ;)",
             imagine: "/make-me-fit-banner.png",
-            link: "make-me-fit"
+            link: "/make-me-fit"
         },
         {
             titlu: "Smartcore",
             descriere: "Website de prezentare a cursurilor, acesta este proiectul pe care l-am construit pentru una dintre probele atestatului de unde am obținut certificarea de „ajutor analist programator”.",
             eticheta: "Proiect construit  în 3 zile",
             imagine: "/smartcore-banner.png",
-            link: "smartcore"
+            link: "/smartcore"
         },
     ]
 
   return (
     <section
         className="my-24">
-        <H3 text="Proiecte de web design & development"></H3>
+        <div id="proiecte"><H3 text="Proiecte de web design & development"></H3></div>
         <div
             className={`${bodyW} flex gap-5`}>
             {proiecte.map((proiect, index) => (
@@ -51,7 +51,7 @@ const Proiecte = () => {
                     className="p-8 flex flex-25 flex-col">
                         <div
                             className="relative mb-6">
-                            <Image src={proiect.imagine} width={301} height={210} alt={proiect.imagine.slice(1)}></Image>
+                            <Image src={proiect.imagine} width={301} height={210} alt={proiect.imagine.slice(1, proiect.imagine.length - 3)}></Image>
                             <p
                                 className={`eticheta ${proiect.titlu === "Make Me Fit" ? "eticheta-roz" : ""} absolute top-0 right-0`}>
                                     {proiect.eticheta}
@@ -64,14 +64,10 @@ const Proiecte = () => {
                             className="descriere">
                                 {proiect.descriere}
                         </p>
-                        <Link
-                            href={`/${proiect.link}`}
-                            className="mt-4">
-                            <button
-                                className="proiect-btn">
-                                    Vezi portofoliu
-                            </button>
-                        </Link>
+                        <button
+                            className="proiect-btn mt-4">
+                                Vezi portofoliu
+                        </button>
                 </Link>
             ))}
         </div>
