@@ -92,9 +92,9 @@ const DateleClientei = () => {
                         gap: "var(--input-section-my)"
                     }}>
                     {inputs.map((categorie, index) => (
-                        <fieldset>
-                            <div 
-                                key={index}>
+                        <fieldset
+                            key={index}>
+                            <div>
                                 <CheckoutHeading title={categorie.titlu} subtitle={categorie.descriere}/>
                                 <div
                                     className="flex flex-wrap"
