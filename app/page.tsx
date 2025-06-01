@@ -9,7 +9,6 @@ import FadeInOnScroll from "./components/FadeInOnScroll";
 import AbilitatiTehnice from "./landing-page-components/AbilitatiTehnice";
 import ExperienteAnterioare from "./landing-page-components/ExperienteAnterioare";
 import DespreMine from "./landing-page-components/DespreMine";
-import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
