@@ -1,7 +1,7 @@
 import Checkmark from '@/app/make-me-fit/components/Checkmark'
 import React from 'react'
 
-const Perks = ({ markType, perks }: { markType: "checkmark" | "crossmark", perks: String[]}) => {
+const Perks = ({ markType, perks }: { markType: "checkmark" | "crossmark", perks: string[]}) => {
 
     let src;
     if (markType === "checkmark")
