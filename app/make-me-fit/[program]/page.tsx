@@ -37,7 +37,7 @@ const ProgramLP = async ({ params }: {params: { program: string }}) => {
       },
     ]
 
-    const { program } = await params;
+    const { program } = params;
     const result = await prisma.program.findUnique({where: {nume: program}});
     const numeProgram = result?.nume.split("-").map(cuv => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
@@ -62,7 +62,7 @@ const ProgramLP = async ({ params }: {params: { program: string }}) => {
         style={{
           gap: "var(--section-mb)"
         }}>
-        <Testimoniale params={{ program: await params.program }}/>
+        <Testimoniale params={{ program }}/>
         <BeneficiiInscriere />
         <CumTeAjuta />
         <FotografiiIncluse />
