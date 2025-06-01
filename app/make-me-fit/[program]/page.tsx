@@ -11,11 +11,7 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-interface Props {
-    params: { program: string }
-}
-
-const ProgramLP = async ({ params }: Props) => {
+const page = async ({ params }: {params: { program: string }}) => {
 
     const perksImg = [
       {
@@ -66,7 +62,7 @@ const ProgramLP = async ({ params }: Props) => {
         style={{
           gap: "var(--section-mb)"
         }}>
-        <Testimoniale params={{ program: await params.program }}/>
+        <Testimoniale params={{ program: params.program }}/>
         <BeneficiiInscriere />
         <CumTeAjuta />
         <FotografiiIncluse />
@@ -79,4 +75,4 @@ const ProgramLP = async ({ params }: Props) => {
   )
 }
 
-export default ProgramLP
+export default page
