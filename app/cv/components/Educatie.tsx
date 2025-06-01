@@ -225,7 +225,7 @@ const Educatie = () => {
                 <ol
                     className="list-decimal ml-4">
                         {contributie.contributii.map((bullet, indexBullet) => (
-                            typeof bullet === 'string'
+                            typeof bullet !== 'string'
                             ? 
                                 <div
                                     key={indexBullet}>
