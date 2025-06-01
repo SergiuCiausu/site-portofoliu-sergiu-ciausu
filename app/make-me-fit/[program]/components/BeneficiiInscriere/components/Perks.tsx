@@ -3,7 +3,7 @@ import React from 'react'
 
 const Perks = ({ markType, perks }: { markType: "checkmark" | "crossmark", perks: string[]}) => {
 
-    const src = `${markType === "checkmark" ? "checkmark" : "crossmark"}`
+    const src = `${markType === "checkmark" ? "/Checkmark icon web.png" : "/Crossmark icon web.png"}`
 
   return (
     <div>
