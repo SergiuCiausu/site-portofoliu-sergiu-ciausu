@@ -1,4 +1,3 @@
-import prismaMakeMeFit from '@/prisma/make-me-fit/client';
 import React from 'react'
 import Image from 'next/image';
 import CheckoutPret from './CheckoutPret';
