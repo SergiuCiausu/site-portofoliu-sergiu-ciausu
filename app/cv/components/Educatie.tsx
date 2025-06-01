@@ -212,9 +212,8 @@ const Educatie = () => {
     <div>
         <FadeInOnScroll><Heading text="Educație și cursuri de formare"/></FadeInOnScroll>
         {contributii.map((contributie, index) => (
-            <FadeInOnScroll>
+            <FadeInOnScroll key={index}>
             <section
-                key={index}
                 className={`${bodyW} my-16`}>
                 <div className="mb-4"><Anchor text="section" /></div>
                 <p className="contributie-perioada mb-2">{contributie.perioada}</p>
