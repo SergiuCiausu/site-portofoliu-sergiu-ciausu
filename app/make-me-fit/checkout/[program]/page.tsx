@@ -5,10 +5,6 @@ import React from 'react'
 import DateleClientei from './components/DateleClientei';
 import DateProgram from './components/DateProgram';
 
-interface Props {
-    params: { program: string }
-}
-
 const page = async (params: { params : Promise<{ program: string }>}) => {
     const program = await params;
     const result = await prisma.program.findUnique({where:{nume: program}});
