@@ -233,20 +233,10 @@ const Educatie = () => {
                                     <ol 
                                         className="list-decimal ml-12">
                                         {bullet.subcontributii.map((subcontributie, indexSub) => (
-                                                subcontributie.subsubcontributii 
-                                                    ? 
-                                                        <div
-                                                            key={indexSub}>
-                                                            <li className="contributii-label mb-2">{subcontributie.bullet}</li>
-                                                            <ul
-                                                                key={index}
-                                                                className="list-disc ml-20">
-                                                            {subcontributie.subsubcontributii.map((subsub, indexSubSub) => (  
-                                                                    <li key={indexSubSub} className="contributii-label mb-2">{subsub}</li>
-                                                            ))}
-                                                            </ul>
-                                                        </div>
-                                                    : <div key={indexSub}></div>
+                                                    <div
+                                                        key={indexSub}>
+                                                        <li className="contributii-label mb-2">{subcontributie}</li>
+                                                    </div>
                                             ))}
                                     </ol>
                                 </div>
