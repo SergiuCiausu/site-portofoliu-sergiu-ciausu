@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import type { Metadata, ResolvingMetadata } from 'next'
 import React from 'react'
 import prisma from "@/prisma/client"
 import HeroSection from '../components/Hero/HeroSection'
@@ -11,7 +12,11 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-const Page = async ({ params }: {params: { program: string } | Promise<{ program: string }>}) => {
+type Props = {
+  params: Promise<{ program: string }>
+}
+
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
 
     const perksImg = [
       {
@@ -75,4 +80,4 @@ const Page = async ({ params }: {params: { program: string } | Promise<{ program
   )
 }
 
-export default Page
+export default function Page({ params }: Props) {}
