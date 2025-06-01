@@ -38,7 +38,7 @@ const SectiuneProduse = ({ header }: { header: string }) => {
             setData(response.data);
             
           } catch (error) {
-            // setError("Eroare în procesarea datelor");
+            console.log(error);
           } finally {
             setIsLoading(false);
           }
