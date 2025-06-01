@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="my-16"><Anchor text="body" /></div>
+      <FadeInOnLoad><div className="my-16"><Anchor text="body" /></div></FadeInOnLoad>
       <Hero elementId="proiecte"/>
       <FadeInOnLoad>
         <Anchor text="main" />
