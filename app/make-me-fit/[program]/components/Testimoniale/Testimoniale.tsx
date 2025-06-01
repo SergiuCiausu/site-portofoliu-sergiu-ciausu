@@ -4,6 +4,15 @@ import { notFound } from 'next/navigation'
 import Testimonial from './TestimonialLP/Testimonial'
 import HeadingLP from '@/app/make-me-fit/components/Headings/HeadingLP'
 
+interface TestimonialType {
+    id: number,
+    poza: string,
+    nume: string,
+    varsta: number,
+    descriere: string,
+    programId: number
+}
+
 const Testimoniale = async ({ program }: { program: string }) => {
 
     const result = await prisma.program.findUnique({
@@ -34,7 +43,7 @@ const Testimoniale = async ({ program }: { program: string }) => {
                 gap: "var(--testimonial-lp-grid-gap)",
                 margin: "0 var(--body-margin)"
             }}>
-            {testimoniale.map((testimonial, index) => (
+            {testimoniale.map((testimonial: TestimonialType, index: number) => (
                 index < 3
                     ?   
                         <Testimonial 
