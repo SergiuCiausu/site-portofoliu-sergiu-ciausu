@@ -53,9 +53,8 @@ const Studii = () => {
             <div
                 className="flex flex-col items-stretch">
                 {studii.map((studiu, index) => (
-                        <FadeInOnScroll>
+                        <FadeInOnScroll key={index}>
                             <section
-                                key={index}
                                 className={`w-[984px] mx-autoflex flex-col justify-center ${index !== 0 ? "pt-36" : ""}`}
                                 id={index === 0 ? "lter" : ""}>
                                     <p
