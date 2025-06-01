@@ -2,7 +2,11 @@ import React from 'react'
 import Benefit from './Benefit';
 import "@/app/make-me-fit/globals.css";
 
-const BeneficiiProgram = ({ benefits }: { benefits: Array<object>}) => {
+interface benefits {
+  text: string
+}
+
+const BeneficiiProgram = ({ benefits }: { benefits: benefits[]}) => {
   return (
     <div 
         className="flex flex-col w-full"
