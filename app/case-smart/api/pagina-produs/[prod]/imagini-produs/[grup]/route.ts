@@ -1,8 +1,8 @@
 import prisma from "@/prisma/client";
 import { NextResponse } from "next/server";
 
-export async function GET(context: { params: { grup: string; prod: string } }) {
-    const { grup } = await context.params;
+export async function GET({ params }: { params: { grup: string; prod: string } }) {
+    const { grup } = params;
     const imaginiProdus = await prisma.imaginiProdus.findMany({
         where: {
             grup_produs: Number(grup)
