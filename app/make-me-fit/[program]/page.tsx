@@ -36,7 +36,7 @@ export default async function Page(params: { params : Promise<{ program: string 
         text: "Progresii adaptate oricărui nivel"
       },
     ]
-    const program = await params;
+    const { program } = await params.params;
     const result = await prisma.program.findUnique({where: {nume: program}});
     const numeProgram = result?.nume.split("-").map((cuv : string) => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
