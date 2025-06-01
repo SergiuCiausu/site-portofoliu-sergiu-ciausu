@@ -11,11 +11,7 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-type Props = {
-  params: Promise<{ program: string }>
-}
-
-export default async function page(props: { params : Props}) {
+export default async function Page(params: { params : Promise<{ program: string }>}) {
 
     const perksImg = [
       {
@@ -40,9 +36,7 @@ export default async function page(props: { params : Props}) {
         text: "Progresii adaptate oricărui nivel"
       },
     ]
-
-    const params = await props.params
-    const program = await params.program;
+    const program = await params;
     const result = await prisma.program.findUnique({where: {nume: program}});
     const numeProgram = result?.nume.split("-").map(cuv => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
