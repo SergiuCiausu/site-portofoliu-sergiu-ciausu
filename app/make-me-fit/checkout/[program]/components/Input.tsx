@@ -102,26 +102,7 @@ const Input = ({ inputConfig }: { inputConfig: InputConfig }) => {
                 />
                 <Tooltip 
                     id="cvvTip" 
-                    content={
-                        <div
-                            className="flex items-center justify-center"
-                            style={{
-                                gap: "var(--tooltip-gap)",
-                                padding: "var(--tooltip-py) 0",
-                            }}>
-                             <p
-                                style={{
-                                    fontSize: "var(--tooltip-font-size)"
-                                }}>CVV / CVC este codul de 3 sau 4 cifre de pe spatele cardului.</p>
-                             <Image
-                                src="/card illustration tooltip.png"
-                                alt="Ilustrație card"
-                                width={400}
-                                height={400}
-                                style={{
-                                    width: "var(--tooltip-illustration-width)"
-                                }}></Image>
-                        </div>}
+                    content={"CVV / CVC este codul de 3 sau 4 cifre de pe spatele cardului"}
                     className="font-body text-neutralColor"
                     style={{
                         fontSize: "var(--tooltip-font-size)",
