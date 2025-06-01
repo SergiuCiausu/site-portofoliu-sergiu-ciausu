@@ -1,8 +1,12 @@
 import prisma from "@/prisma/client";
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 
-export async function GET({ params }: { params: { grup: string; prod: string } }) {
-    const { grup } = params;
+export async function GET(request: NextRequest) {
+    const url = new URL(request.url);
+    const pathParts = url.pathname.split("/");
+
+    const grup = pathParts[pathParts.indexOf("imagini-produs") + 1];
+
     const imaginiProdus = await prisma.imaginiProdus.findMany({
         where: {
             grup_produs: Number(grup)
