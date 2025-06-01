@@ -4,8 +4,7 @@ import Header from '@/app/case-smart/components/Nav/Header'
 import React from 'react'
 import Image from "next/image";
 import "@/app/case-smart/globals.css"
-import "./auth.css"
-import { signIn } from 'next-auth/react';
+import "./auth.css";
 
 const page = () => {
   return (
@@ -17,8 +16,7 @@ const page = () => {
                 <div
                     className="w-[400px] flex flex-col gap-8">
                     <button
-                        className="flex items-center justify-center gap-4 google-auth-btn py-3 rounded-lg w-full"
-                        onClick={() => signIn("google", { callbackUrl: "/" })}>
+                        className="flex items-center justify-center gap-4 google-auth-btn py-3 rounded-lg w-full">
                         <Image src="/google-logo.png" alt="google logo" width={48} height={48}></Image>
                         <p className="google-auth-btn-text">Continuă cu contul Google</p>
                     </button>
