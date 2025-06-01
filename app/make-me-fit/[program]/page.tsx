@@ -11,11 +11,7 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-interface Props {
-    params: { program: string }
-}
-
-const ProgramLP = async ({ params }: Props) => {
+const ProgramLP = async ({ params }: {params: { program: string }}) => {
 
     const perksImg = [
       {
