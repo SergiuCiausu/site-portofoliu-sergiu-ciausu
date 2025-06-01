@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import type { Metadata } from 'next'
 import React from 'react'
 import prisma from "@/prisma/client"
 import HeroSection from '../components/Hero/HeroSection'
@@ -16,7 +15,7 @@ type Props = {
   params: Promise<{ program: string }>
 }
 
-export default async function page({ params }: Props): Promise<Metadata> {
+export default async function page(props: { params : Props}) {
 
     const perksImg = [
       {
@@ -42,7 +41,8 @@ export default async function page({ params }: Props): Promise<Metadata> {
       },
     ]
 
-    const { program } = await params;
+    const params = await props.params
+    const program = await params.program;
     const result = await prisma.program.findUnique({where: {nume: program}});
     const numeProgram = result?.nume.split("-").map(cuv => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
