@@ -12,6 +12,7 @@ const BeneficiiProgram = ({ benefits }: { benefits: Array<object>}) => {
         }}>
             {benefits.map((benefit, index) => (
                 <Benefit 
+                    key={index}
                     benefit={benefit.text} 
                     isBold={index === benefits.length - 1 ? true : false}/> 
             ))}
