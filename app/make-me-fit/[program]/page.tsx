@@ -11,7 +11,7 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-const Page = async ({ params }: {params: { program: string }}) => {
+const Page = async ({ params }: {params: Promise<{ program: string }>}) => {
 
     const perksImg = [
       {
@@ -37,7 +37,7 @@ const Page = async ({ params }: {params: { program: string }}) => {
       },
     ]
 
-    const { program } = params;
+    const { program } = await params;
     const result = await prisma.program.findUnique({where: {nume: program}});
     const numeProgram = result?.nume.split("-").map(cuv => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
@@ -62,7 +62,7 @@ const Page = async ({ params }: {params: { program: string }}) => {
         style={{
           gap: "var(--section-mb)"
         }}>
-        <Testimoniale program={params.program}/>
+        <Testimoniale program={program}/>
         <BeneficiiInscriere />
         <CumTeAjuta />
         <FotografiiIncluse />
