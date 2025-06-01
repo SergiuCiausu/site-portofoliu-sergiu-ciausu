@@ -1,0 +1,20 @@
+.tabel-limbi {
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+.tabel-h-limbi {
+    font-weight: 700;
+    color: var(--code-detail-text-color);
+    padding: 16px 32px;
+}
+
+.tabel-r-limbi {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.tabel-d-limbi {
+    color: var(--white-color);
+    text-align: center;
+}
