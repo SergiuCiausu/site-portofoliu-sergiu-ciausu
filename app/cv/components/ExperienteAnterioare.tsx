@@ -1,8 +1,8 @@
 import React from 'react'
-import FadeInOnScroll from '../components/FadeInOnScroll'
-import Anchor from '../components/Anchor'
-import H3 from '../components/H3'
-import { bodyW } from '../variables/variables'
+import FadeInOnScroll from '@/app/components/FadeInOnScroll'
+import Anchor from '@/app/components/Anchor'
+import H3 from '@/app/components/H3'
+import { bodyW } from '@/app/variables/variables'
 import Image from "next/image";
 import "@/app/landing-page-components/proiecte.css"
 import Link from 'next/link'
