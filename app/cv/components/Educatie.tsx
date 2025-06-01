@@ -247,7 +247,7 @@ const Educatie = () => {
                                                             ))}
                                                             </ul>
                                                         </div>
-                                                    : ""
+                                                    : <div key={indexSub}></div>
                                             ))}
                                     </ol>
                                 </div>
