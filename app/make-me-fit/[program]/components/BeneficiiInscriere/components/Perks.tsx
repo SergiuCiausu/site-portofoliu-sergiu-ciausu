@@ -3,13 +3,7 @@ import React from 'react'
 
 const Perks = ({ markType, perks }: { markType: "checkmark" | "crossmark", perks: string[]}) => {
 
-    let src;
-    if (markType === "checkmark")
-        src="/Checkmark icon web.png"
-    else if (markType === "crossmark")
-        src="/Crossmark icon web.png"
-    else
-        return console.error("Marktype invalid")
+    const src = `${markType === "checkmark" ? "checkmark" : "crossmark"}`
 
   return (
     <div>
