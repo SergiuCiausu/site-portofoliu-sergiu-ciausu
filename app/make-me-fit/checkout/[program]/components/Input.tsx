@@ -5,7 +5,6 @@ import "@/app/make-me-fit/globals.css"
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
 import { FaQuestionCircle } from 'react-icons/fa';
-import Image from 'next/image';
 
 interface InputConfig {
     type: string,
