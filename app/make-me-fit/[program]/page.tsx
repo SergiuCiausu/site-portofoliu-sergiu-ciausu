@@ -11,7 +11,11 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-const ProgramLP = async ({ params }: {params: { program: string }}) => {
+interface Props {
+    params: { program: string }
+}
+
+const ProgramLP = async ({ params }: Props) => {
 
     const perksImg = [
       {
@@ -62,7 +66,7 @@ const ProgramLP = async ({ params }: {params: { program: string }}) => {
         style={{
           gap: "var(--section-mb)"
         }}>
-        <Testimoniale params={{ program: params.program }}/>
+        <Testimoniale params={{ program: await params.program }}/>
         <BeneficiiInscriere />
         <CumTeAjuta />
         <FotografiiIncluse />
