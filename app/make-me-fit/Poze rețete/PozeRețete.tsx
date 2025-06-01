@@ -36,6 +36,7 @@ const PozeRețete = () => {
                     !(index > 2)
                     ? (
                         <Image 
+                            key={index}
                             src={poza} 
                             alt="Poză rețetă"
                             width={493}
@@ -59,6 +60,7 @@ const PozeRețete = () => {
                     index > 2 
                     ? (
                         <Image 
+                            key={index}
                             src={poza} 
                             alt="Poză rețetă"
                             width={365}
