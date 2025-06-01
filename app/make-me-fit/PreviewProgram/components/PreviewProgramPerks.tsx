@@ -12,8 +12,9 @@ const PreviewProgramPerks = ({ perks }: { perks: Array<string> }) => {
         <p className="make-me-fit-heading-lp-p" style={{ fontSize: "var(--p-size)" }}>
             În acest program te vom învăța să:
         </p>
-        {perks.map(perk => (
+        {perks.map((perk, index) => (
             <div
+                key={index}
                 className="flex">
                     <Checkmark src="/Checkmark icon web.png" />
                     <p
