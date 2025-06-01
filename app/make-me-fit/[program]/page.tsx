@@ -11,7 +11,7 @@ import PreviewTutorial from './components/PreviewTutorial/PreviewTutorial'
 import TestimonialeFinal from '../Testimoniale/TestimonialeFinal'
 import CTAFinal from '../CTAFinal/CTAFinal'
 
-const Page = async ({ params }: {params: Promise<{ program: string }>}) => {
+const Page = async ({ params }: {params: { program: string } | Promise<{ program: string }>}) => {
 
     const perksImg = [
       {
