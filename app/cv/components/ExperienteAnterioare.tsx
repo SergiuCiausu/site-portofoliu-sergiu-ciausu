@@ -148,7 +148,7 @@ const ExperienteAnterioare = () => {
                                                         ))}
                                                         </ul>
                                                     </div>
-                                                : ""
+                                                : <div key={indexSub}></div>
                                         ))}
                                 </ol>
                             </div>
