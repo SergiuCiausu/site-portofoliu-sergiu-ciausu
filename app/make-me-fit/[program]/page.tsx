@@ -62,7 +62,7 @@ const ProgramLP = async ({ params }: {params: { program: string }}) => {
         style={{
           gap: "var(--section-mb)"
         }}>
-        <Testimoniale params={{ program }}/>
+        <Testimoniale params={{ program: params.program }}/>
         <BeneficiiInscriere />
         <CumTeAjuta />
         <FotografiiIncluse />
