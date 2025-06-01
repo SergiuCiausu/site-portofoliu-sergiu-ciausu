@@ -5,9 +5,26 @@ import Input from './Input'
 import "@/app/make-me-fit/globals.css"
 import CheckoutCheckBoxes from './CheckoutCheckBoxes'
 
+interface InputConfig {
+    titlu: string,
+    descriere: string,
+    categorie: string,
+    specs:
+        {
+            type: string,
+            name: string,
+            placeholder: string,
+            inputmode?: "search" | "email" | "tel" | "text" | "url" | "none" | "numeric" | "decimal" | undefined,
+            pattern?: string,
+            autocomplete?: string,
+            maxLength?: number,
+            max?: number
+        }[]
+}
+
 const DateleClientei = () => {
 
-    const inputs = [
+    const inputs : InputConfig[] = [
         {
             titlu: "Datele clientei",
             descriere: "",
