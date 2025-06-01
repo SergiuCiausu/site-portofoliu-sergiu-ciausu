@@ -69,7 +69,7 @@ const Studii = () => {
                                     <ul
                                         className="flex flex-col gap-2">
                                         {studiu.bullets.map((bullet, indexBullet) => (
-                                            <li key={indexBullet} className="bullet-li">{bullet}</li>
+                                            <li key={`${index}${indexBullet}`} className="bullet-li">{bullet}</li>
                                         ))}
                                     </ul>
                             </section>
