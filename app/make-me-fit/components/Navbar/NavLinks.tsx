@@ -4,11 +4,8 @@ import Link from 'next/link';
 import React from 'react'
 import NavButtons from './NavButtons';
 import "@/app/make-me-fit/globals.css";
-import { usePathname } from 'next/navigation';
 
 const NavLinks = () => {
-
-    const pathname = usePathname();
     
     interface NavLinks {
         href: string,
