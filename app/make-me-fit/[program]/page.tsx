@@ -38,7 +38,7 @@ export default async function Page(params: { params : Promise<{ program: string 
     ]
     const program = await params;
     const result = await prisma.program.findUnique({where: {nume: program}});
-    const numeProgram = result?.nume.split("-").map(cuv => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
+    const numeProgram = result?.nume.split("-").map((cuv : string) => cuv.charAt(0).toUpperCase() + cuv.slice(1)).join(' ');
 
     if(!result) {
         notFound();
