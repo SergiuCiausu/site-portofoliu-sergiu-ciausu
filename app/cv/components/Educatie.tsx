@@ -250,7 +250,7 @@ const Educatie = () => {
                                             ))}
                                     </ol>
                                 </div>
-                            : <li key={indexBullet} className="contributii-label mb-2">{bullet.bullet}</li>
+                            : <li key={indexBullet} className="contributii-label mb-2">{bullet}</li>
                         ))}
                 </ol>
                 <div className="my-4"><Anchor text="section" type="end"/></div>
