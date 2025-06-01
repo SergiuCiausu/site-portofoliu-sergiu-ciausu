@@ -5,7 +5,6 @@ import Header from './Header';
 import HeroP from "./HeroP";
 import HeroBtn from './HeroBtn';
 import "@/app/make-me-fit/globals.css";
-import { text } from 'stream/consumers';
 
 const HeroSection = (
   { nume, infoAccentText, header, heroP, textBtn, img, color }: 
