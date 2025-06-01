@@ -75,6 +75,7 @@ const Programe = async () => {
             "Acces la comunitate pentru sprijin și motivație",
             "Tot ce ai nevoie pentru a începe un regim plăcut, a-ți găsi timp pentru mișcare și a te ține de treabă pe toată durata programului"
           ],
+          isHighlighted: false,
           pret: `${programeDB[2].pret} lei`,
           descrierePret: "Acces 12 săptămâni, după care 214 lei/ lună"
         },
