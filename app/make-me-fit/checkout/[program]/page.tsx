@@ -10,7 +10,7 @@ interface Props {
 }
 
 const page = async ({ params }: Props) => {
-    const { program } = await params;
+    const { program } = params;
     const result = await prisma.program.findUnique({where:{nume: program}});
 
     if(!result) {
