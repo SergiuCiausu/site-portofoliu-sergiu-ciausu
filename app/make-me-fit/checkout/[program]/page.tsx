@@ -1,4 +1,4 @@
-import prismaMakeMeFit from '@/prisma/make-me-fit/client';
+import prismaMakeMeFit from '@/prisma/client';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React from 'react'
@@ -11,7 +11,7 @@ interface Props {
 
 const page = async ({ params }: Props) => {
     const { program } = await params;
-    const result = await prismaMakeMeFit.program.findUnique({where:{nume: program}});
+    const result = await prisma.program.findUnique({where:{nume: program}});
 
     if(!result) {
         notFound();
