@@ -4,11 +4,11 @@ import { notFound } from 'next/navigation'
 import Testimonial from './TestimonialLP/Testimonial'
 import HeadingLP from '@/app/make-me-fit/components/Headings/HeadingLP'
 
-const Testimoniale = async ({ params }: { params: { program: string }}) => {
+const Testimoniale = async ({ program }: { program: string }) => {
 
     const result = await prisma.program.findUnique({
         where: {
-            nume: params.program
+            nume: program
         }
     })
 
