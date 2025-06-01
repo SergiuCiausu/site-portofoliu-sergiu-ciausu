@@ -82,6 +82,7 @@ const AbilitatiTehnice = () => {
                 className={`${bodyW} flex flex-col gap-12 p-8`}>
                 {limbajeProgramare.map((limbaj, index) => (
                     <div
+                        key={index}
                         className="flex justify-between">
                             <h5>
                                 {limbaj.nume}
