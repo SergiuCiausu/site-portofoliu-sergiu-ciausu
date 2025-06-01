@@ -16,7 +16,7 @@ type Props = {
   params: Promise<{ program: string }>
 }
 
-export async function Page({ params }: Props): Promise<Metadata> {
+export async function page({ params }: Props): Promise<Metadata> {
 
     const perksImg = [
       {
