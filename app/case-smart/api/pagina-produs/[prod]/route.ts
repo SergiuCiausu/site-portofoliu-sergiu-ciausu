@@ -1,5 +1,5 @@
 import prisma from "@/prisma/client";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 interface Produs {
   url: string;
@@ -13,8 +13,11 @@ interface GroupedProdus extends Produs {
   variants: { culoare: string; img: string }[];
 }
 
-export async function GET({ params }: { params: { prod: string }}) {
-    const { prod } = await params;
+export async function GET(request: NextRequest) {
+    const url = new URL(request.url);
+    const pathParts = url.pathname.split("/");
+
+    const prod = pathParts[pathParts.indexOf("pagina-produs") + 1];
     const produse = await prisma.produs.findMany({
         where: {
             url: prod
