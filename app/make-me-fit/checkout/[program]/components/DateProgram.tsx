@@ -1,5 +1,5 @@
 import React from 'react'
-import prismaMakeMeFit from '@/prisma/client'
+import prisma from '@/prisma/client'
 import CheckoutProgram from './CheckoutProgram'
 
 const DateProgram = async ({ program }: { program: string }) => {
