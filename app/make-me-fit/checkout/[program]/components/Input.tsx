@@ -23,7 +23,6 @@ const Input = ({ inputConfig }: { inputConfig: InputConfig }) => {
     const [inputValue, setInputValue] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
     const [hasTyped, setHasTyped] = useState(false);
-    const [showToolTip, setShowToolTip] = useState(false);
 
     const handleValidation = (value: string) => {
 
@@ -100,8 +99,6 @@ const Input = ({ inputConfig }: { inputConfig: InputConfig }) => {
                 }}>
                 <FaQuestionCircle 
                     data-tip data-tooltip-id="cvvTip"
-                    onMouseEnter={() => setShowToolTip(true)}
-                    onMouseLeave={() => setShowToolTip(false)}
                 />
                 <Tooltip 
                     id="cvvTip" 
