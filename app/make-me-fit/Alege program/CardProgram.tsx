@@ -6,11 +6,15 @@ import BeneficiiProgram from './components/BeneficiiProgram';
 import PretProgram from './components/PretProgram';
 import InscriereProgram from './components/InscriereProgram';
 
+interface benefits {
+    text: string
+}
+
 const CardProgram = ({ name, description, benefits, isHighlighted, pret, descrierePret, pretVechi, bonus }: 
     { 
         name: string, 
         description: string, 
-        benefits: Array<object>, 
+        benefits: benefits[], 
         isHighlighted: boolean,
         pret: string ,
         descrierePret: string,
