@@ -16,14 +16,16 @@ interface Produs {
     brand: string,
     categorie: string,
     pret: number,
-    variants: Variant[]
+    variants: Variant[],
+    url: string
 }
 
 interface ProduseProps {
-    produse: Produs[]
+    produse: Produs[];
+    isSingleFiltruCuloare: boolean;
 }
 
-const Produse: React.FC<ProduseProps> = ({ produse, isSingleFiltruCuloare }: {produse: Produs, isSingleFiltruCuloare: boolean}) => {
+const Produse: React.FC<ProduseProps> = ({ produse, isSingleFiltruCuloare }) => {
   return (
     <div
         className="grid grid-cols-3 gap-5">
