@@ -9,8 +9,8 @@ interface Props {
     params: { program: string }
 }
 
-const page = async ({ params }: Props) => {
-    const { program } = params;
+const page = async (params: { params : Promise<{ program: string }>}) => {
+    const program = await params;
     const result = await prisma.program.findUnique({where:{nume: program}});
 
     if(!result) {
