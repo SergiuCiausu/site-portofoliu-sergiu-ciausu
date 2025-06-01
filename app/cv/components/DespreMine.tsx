@@ -11,8 +11,8 @@ const DespreMine = () => {
     <FadeInOnScroll>
         <section
             className={`${bodyW}`}>
-            <Heading text="Despre mine" />
-            <Link href="/" className="cv-big-link">Acesta este portofoliul meu de web + graphic design.</Link>
+            <div className="mb-8"><Heading text="Despre mine" /></div>
+            <Link href="https://drive.google.com/drive/folders/1ObpwmLPCpy0sOFfX1OnJJ8uOLa2D_gmI?usp=sharing" target="_blank" className="cv-big-link pt-8">Acesta este portofoliul meu de web + graphic design.</Link>
             <p
                 className="flex flex-col gap-8 despre-mine-text mt-6">
                 <strong>Eu sunt Sergiu-Andrei Ciaușu, am 19 ani, iar de-a lungul vieții nu mi-a plăcut niciodată să stau degeaba.</strong> De mic am fost învățat să-mi preocup timpul cu activități care mă vor ajuta să evoluez. Am făcut fotbal 10 ani, de unde am deprins două aspecte care s-au dovedit a fi definitorii pentru caracterul meu:

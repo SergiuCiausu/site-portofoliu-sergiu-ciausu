@@ -19,7 +19,7 @@ const Navbar = () => {
                         <NavAnchor text="nav" />
                         <p
                             className="nav-logo">
-                                SERGIU CIAUSU
+                                <Link href="/">SERGIU CIAUSU</Link>
                         </p>
                     </div>
                     <ul

@@ -120,3 +120,69 @@ h5 {
   font-weight: 700;
   color: var(--white-color);
 }
+
+p,li {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.before-text, .after-text {
+  font-family: var(--code-font);
+  font-size: 16px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.img-border {
+  border: 5px solid var(--primary-color);
+  border-radius: 16px;
+}
+
+.ml-16 {
+  margin-left: 64px;
+}
+
+.my-16 {
+  margin: 64px auto !important;
+}
+
+.mx-auto {
+  margin: 0px auto;
+}
+
+.mx-24 {
+  margin: 0px 96px;
+}
+
+.mt-8 {
+  margin-top: 32px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 64px;
+}
+
+.mt-16 {
+  margin-top: 64px;
+}
+
+.mt-24 {
+  margin-top: 96px;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+.pt-8 {
+  padding-top: 32px;
+}

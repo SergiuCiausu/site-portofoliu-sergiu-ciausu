@@ -9,10 +9,15 @@ import FadeInOnScroll from "./components/FadeInOnScroll";
 import AbilitatiTehnice from "./landing-page-components/AbilitatiTehnice";
 import ExperienteAnterioare from "./landing-page-components/ExperienteAnterioare";
 import DespreMine from "./landing-page-components/DespreMine";
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
+
   return (
     <div>
+      <Navbar />
+      <div className="my-16"><Anchor text="body" /></div>
       <Hero elementId="proiecte"/>
       <FadeInOnLoad>
         <Anchor text="main" />
@@ -24,6 +29,9 @@ export default function Home() {
       <AbilitatiTehnice />
       <ExperienteAnterioare />
       <DespreMine />
+      <div className="my-16"><Anchor text="section" type="end"/></div>
+      <div className="my-16"><Anchor text="main" type="end"/></div>
+      <div className="my-16"><Anchor text="body" type="end"/></div>
     </div>
   );
 }

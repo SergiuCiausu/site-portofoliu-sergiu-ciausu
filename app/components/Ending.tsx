@@ -22,6 +22,8 @@ const Ending = () => {
                     className={`${bodyW} flex justify-center`}>
                         <Link href={pathName}><button className="hero-cta-btn">Vezi portofoliu</button></Link>
                 </div>
+                <div className="mt-4 mb-16"><Anchor text="section" type="end"/></div>
+                <div className="mt-4 mb-16"><Anchor text="body" type="end"/></div>
         </section>
     </FadeInOnScroll>
   )

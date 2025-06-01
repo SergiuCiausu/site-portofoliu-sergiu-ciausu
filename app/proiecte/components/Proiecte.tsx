@@ -83,7 +83,8 @@ const Proiecte = () => {
                     key={index}
                     href={proiect.link}
                     id={index === 0 ? "proiect" : ""}
-                    className="flex items-center mb-12">
+                    className="flex items-center mb-12"
+                    target="_blank">
                         <div 
                             className="flex-50">
                                 <Image src={proiect.imagine} width={1468} height={1074} alt={proiect.imagine.slice(1, proiect.imagine.length - 3)}></Image>

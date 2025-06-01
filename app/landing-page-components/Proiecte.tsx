@@ -47,8 +47,9 @@ const Proiecte = () => {
             {proiecte.map((proiect, index) => (
                 <Link
                     key={index}
-                    href={`/${proiect.link}`}
-                    className="p-8 flex flex-25 flex-col">
+                    href={proiect.link}
+                    className="p-8 flex flex-25 flex-col"
+                    target="_blank">
                         <div
                             className="relative mb-6">
                             <Image src={proiect.imagine} width={301} height={210} alt={proiect.imagine.slice(1, proiect.imagine.length - 3)}></Image>

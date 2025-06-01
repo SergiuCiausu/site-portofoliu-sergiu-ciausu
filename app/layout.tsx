@@ -31,14 +31,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`antialiased`}
-      >
-          <Navbar />
-          <div
-            className={`${bodyW} mx-auto flex justify-center my-24`}>
-              <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
-          </div>
+      >   
           {children}
-          <Ending />
       </body>
     </html>
   );

@@ -4,8 +4,9 @@ import React from 'react'
 import { bodyW } from '@/app/variables/variables'
 import Anchor from '@/app/components/Anchor'
 import FadeInOnLoad from "@/app/components/FadeInOnLoad";
+import Link from 'next/link';
 
-const Hero = ({ htext, evtext, ptext, btext, elementId }: { htext: string, evtext: string, ptext: string, btext: string, elementId: string }) => {
+const Hero = ({ htext, evtext, ptext, btext, elementId, link }: { htext: string, evtext: string, ptext: string, btext: string, elementId: string, link?: string }) => {
 
     const ctaBtnClick = () => {
         const target = document.getElementById(elementId);
@@ -40,7 +41,7 @@ const Hero = ({ htext, evtext, ptext, btext, elementId }: { htext: string, evtex
                     className="p-subtitlu">
                         {ptext}
                 </p>
-                <button className="hero-cta-btn" onClick={ctaBtnClick}>{btext}</button>
+                <button className="hero-cta-btn" onClick={ctaBtnClick}>{link ? <Link href={link} target="_blank">{btext}</Link>: btext}</button>
                 <Anchor text="header" type="end"/>
         </div>
             <div

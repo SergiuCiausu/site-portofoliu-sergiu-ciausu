@@ -3,6 +3,7 @@ import React from 'react'
 import Anchor from './Anchor'
 import "./experiente-anterioare.css"
 import { bodyW } from '@/app/variables/variables'
+import Heading from './Heading'
 
 const ExperienteAnterioare = () => {
 
@@ -109,7 +110,9 @@ const ExperienteAnterioare = () => {
     ]
 
   return (
-    contributii.map((contributie, index) => (
+    <div>
+        <FadeInOnScroll><Heading text="Experiente anterioare"/></FadeInOnScroll>
+        {contributii.map((contributie, index) => (
         <FadeInOnScroll>
         <section
             key={index}
@@ -155,7 +158,8 @@ const ExperienteAnterioare = () => {
             <div className="my-4"><Anchor text="section" type="end"/></div>
         </section>
         </FadeInOnScroll>
-    ))
+        ))}
+    </div>
   )
 }
 
