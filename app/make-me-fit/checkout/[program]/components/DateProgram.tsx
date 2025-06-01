@@ -1,10 +1,10 @@
 import React from 'react'
-import prismaMakeMeFit from '@/prisma/make-me-fit/client'
+import prismaMakeMeFit from '@/prisma/client'
 import CheckoutProgram from './CheckoutProgram'
 
 const DateProgram = async ({ program }: { program: string }) => {
 
-    const programDB = await prismaMakeMeFit.program.findUnique({
+    const programDB = await prisma.program.findUnique({
         where: {
             nume: program
         }
