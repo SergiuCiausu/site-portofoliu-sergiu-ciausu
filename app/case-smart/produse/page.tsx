@@ -19,6 +19,7 @@ const Page = () => {
     })
 
     useEffect(() => {
+        if (typeof window !== "undefined") {
         const pretMin = localStorage.getItem("pretMin");
         const pretMax = localStorage.getItem("pretMax");
 
@@ -26,8 +27,9 @@ const Page = () => {
             pretMin: pretMin ? [pretMin] : [],
             pretMax: pretMax ? [pretMax] : [],
         });
+  }
     }, []);
-    
+
     const [isSingleColorFilter, setIsSingleColorFilter] = useState<boolean>(false);
     const [products, setProducts] = useState<ProduseProps>();
 
