@@ -26,7 +26,7 @@ interface Variant {
     cantitate: number
   }
 
-const ProductCounter = ({ produs, culoare, onClick }: { produs: Produs, culoare: string, onClick: React.Dispatch<React.SetStateAction<number>> }) => {
+const ProductCounter = ({ produs, culoare }: { produs: Produs, culoare: string }) => {
     const storageKey = `cantitate${produs.denumire_produs}-${culoare}`;
     const [count, setCount] = useState(1);
 
@@ -37,8 +37,7 @@ const ProductCounter = ({ produs, culoare, onClick }: { produs: Produs, culoare:
 
     const updateCount = (newCount: number, add: boolean) => {
         localStorage.setItem("cantitateTotala", String(localStorage.getItem("cantitateTotala") ? (add ? Number(localStorage.getItem("cantitateTotala")) + 1 : Number(localStorage.getItem("cantitateTotala")) - 1) : newCount));
-        setCount(newCount);
-        onClick(Number(localStorage.getItem("cantitateTotala")))
+        setCount(Number(localStorage.getItem("cantitateTotala")));
         localStorage.setItem(storageKey, String(newCount));
     };
 
