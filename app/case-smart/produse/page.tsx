@@ -8,24 +8,7 @@ import Filtre from './components/Filtre'
 import axios from 'axios'
 import Produse from './components/Produse'
 import Ordonari from './components/Ordonari';
-
-interface Variant {
-    culoare: string,
-    img: string
-}
-
-interface Produs {
-    id: number
-    denumire_produs: string,
-    rating: number,
-    img: string,
-    reducere: number,
-    totalRecenzii: number
-    brand: string,
-    categorie: string,
-    pret: number,
-    variants: Variant[]
-}
+import type { ProduseProps } from "@/app/case-smart/produse/types"
 
 const Page = () => {
     
@@ -35,7 +18,7 @@ const Page = () => {
         pretMax: localStorage.getItem("pretMax") ? [localStorage.getItem("pretMax") as string] : []
     })
     const [isSingleColorFilter, setIsSingleColorFilter] = useState<boolean>(false);
-    const [products, setProducts] = useState<Produs[]>([]);
+    const [products, setProducts] = useState<ProduseProps>();
 
     const handlePretFilterChange = (updatedFilters: Record<string, FilterValue | undefined>) => {
         const normalizedFilters: Record<string, (string | number)[]> = {};
@@ -62,7 +45,7 @@ const Page = () => {
                     const response = await axios.get("/case-smart/api/produse", {
                         params: filters
                     })
-                    setProducts(response.data);
+                    setProducts(response.data.produs);
                 } catch (error) {
                     console.error("Error loading products: ", error);
                 } finally {
