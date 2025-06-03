@@ -22,15 +22,14 @@ interface Produs {
 
 interface ProduseProps {
     produse: Produs[];
-    isSingleFiltruCuloare: boolean;
 }
 
-const Produse: React.FC<ProduseProps> = ({ produse, isSingleFiltruCuloare }) => {
+const Produse = ({ produse, isSingleFiltruCuloare } : { produse: ProduseProps, isSingleFiltruCuloare: boolean}) => {
   return (
     <div
         className="grid grid-cols-3 gap-5">
-        {produse.length > 0
-        ? produse.map((produs) => (
+        {produse.produse.length > 0
+        ? produse.produse.map((produs) => (
                 <ProductCard 
                     key={produs.id}
                     title={produs.denumire_produs}
