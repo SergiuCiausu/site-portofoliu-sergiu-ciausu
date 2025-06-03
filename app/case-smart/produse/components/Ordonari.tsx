@@ -1,6 +1,6 @@
 'use client';
 
-import type { FilterValue } from '../types';
+import type { FilterValue } from '@/app/case-smart/produse/types';
 import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
