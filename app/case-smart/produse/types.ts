@@ -1,10 +1,4 @@
-export interface FilterValueObject {
-  [key: string]: FilterValue;
-}
-
-export type FilterValue = string | number | FilterValueObject | (string | number)[];
-
-export interface FilterValueObject {
+export type FilterValueObject = {
   [key: string]: FilterValue;
 }
 
