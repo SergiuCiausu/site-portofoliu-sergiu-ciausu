@@ -132,7 +132,7 @@ const Page = () => {
                         </div>
                     </div>
                 : <Produse 
-                    produse={products}
+                    produse={products!}
                     isSingleFiltruCuloare = {isSingleColorFilter}/>}
             </div>
         </div>
