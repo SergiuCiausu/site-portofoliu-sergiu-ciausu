@@ -13,7 +13,7 @@ interface Ordonare {
 
 interface ProductFilterProps {
     onPretFilterChange: (filters: Record<string, FilterValue | undefined>) => void,
-    activeFilters: Record<string, Record<string, (string | number)[]>;
+    activeFilters: Record<string, (string | number)[]>;
 }
 
 const Ordonari: React.FC<ProductFilterProps> = ({ onPretFilterChange, activeFilters }) => {
