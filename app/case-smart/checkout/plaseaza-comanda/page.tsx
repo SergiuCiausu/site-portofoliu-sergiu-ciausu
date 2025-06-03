@@ -47,7 +47,7 @@ const Page = () => {
     <div>
       <ul>
         {cart.map((produs, index) => (
-          <ProdusCard key={index} produs={produs} index={index} functieCantitateTotala={setCantitateTotala}/>
+          <ProdusCard key={index} produs={produs} index={index}/>
         ))}
       </ul>
     </div>
