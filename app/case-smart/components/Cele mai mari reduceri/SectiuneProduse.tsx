@@ -35,7 +35,7 @@ const SectiuneProduse = ({ header }: { header: string }) => {
         const produse = async () => {
           try {
             const response = await axios.get("/case-smart/api/recomandari-produse");
-            setData(response.data);
+            setData(response.data.produse);
             
           } catch (error) {
             console.log(error);
