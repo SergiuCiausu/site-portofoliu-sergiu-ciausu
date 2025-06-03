@@ -2,4 +2,4 @@ export interface FilterValueObject {
   [key: string]: FilterValue;
 }
 
-export type FilterValue = string | number | FilterValueObject;
+export type FilterValue = string | number | FilterValueObject | (string | number)[];
