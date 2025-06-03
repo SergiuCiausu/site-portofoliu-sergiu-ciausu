@@ -12,7 +12,7 @@ interface Ordonare {
 }
 
 interface ProductFilterProps {
-    onPretFilterChange: (filters: Record<string, FilterValue | undefined>) => void;
+    onPretFilterChange: (filters: Record<string, FilterValue | undefined>) => void,
     activeFilters: Record<string, Record<string, (string | number)[]>;
 }
 
