@@ -32,7 +32,7 @@ interface Produs {
     cantitate: number
   }
 
-const ProdusCard = ({ produs, index, functieCantitateTotala }: { produs: Produs, index: number, functieCantitateTotala: Dispatch<SetStateAction<number>> }) => {
+const ProdusCard = ({ produs, index }: { produs: Produs, index: number }) => {
   return (
     <li
         key={index}
@@ -64,7 +64,7 @@ const ProdusCard = ({ produs, index, functieCantitateTotala }: { produs: Produs,
                     </div>
                 </div>
                 <div>
-                    <ProdusCounter produs={produs} culoare={produs.variants[0].culoare} onClick={functieCantitateTotala}/>
+                    <ProdusCounter produs={produs} culoare={produs.variants[0].culoare}/>
                 </div>
                 <div
                     className="flex flex-col items-end">
