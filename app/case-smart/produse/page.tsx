@@ -1,5 +1,6 @@
 'use client';
 
+import type { FilterValue } from './types';
 import React, { useEffect, useState } from 'react'
 import Header from '../components/Nav/Header'
 import ProductPageHeader from './components/ProductPageHeader'
@@ -25,12 +26,6 @@ interface Produs {
     pret: number,
     variants: Variant[]
 }
-
-interface FilterValueObject {
-  [key: string]: FilterValue;
-}
-
-type FilterValue = string | number | FilterValueObject;
 
 const Page = () => {
     
