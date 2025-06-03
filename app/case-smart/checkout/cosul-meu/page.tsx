@@ -12,25 +12,25 @@ const Page = () => {
 
     const { cart, loadingProds } = useCart();
     const [pretTotal, setPretTotal] = useState<number>(0);
-    const [cantitateTotala, setCantitateTotala] = useState(Number(localStorage.getItem("cantitateTotala")) || 0);
-
-    const pretLivrare = 14.99 * cart.length;
-
-    const pret = () => {
-        let suma = 0;
-        cart.map(produs => {
-            suma += Math.round((produs.pret - (produs.pret * produs.reducere / 100)) * Number(localStorage.getItem(`cantitate${produs.denumire_produs}-${produs.variants[0].culoare}`)))
-        })
-        localStorage.setItem("pretProduse", String(suma));
-        return suma;
-    }
+    const [pretLivrare, setPretLivrare] = useState(0);
 
     useEffect(() => {
-        setPretTotal(pret());
-        setCantitateTotala(Number(localStorage.getItem("cantitateTotala")))
+        
+        const pretLivrareCalc = 14.99 * cart.length;
+        setPretLivrare(pretLivrareCalc);
+
+        let suma = 0;
+        cart.forEach((produs) => {
+            const qty = Number(localStorage.getItem(`cantitate${produs.denumire_produs}-${produs.variants[0].culoare}`)) || 0;
+            suma += Math.round((produs.pret - (produs.pret * produs.reducere / 100)) * qty);
+        });
+
+        localStorage.setItem("pretProduse", String(suma));
         localStorage.setItem("numarProduse", String(cart.length));
-        localStorage.setItem("pretLivrare", String(pretLivrare));
-    }, [cart, cantitateTotala, pretLivrare]);
+        localStorage.setItem("pretLivrare", String(pretLivrareCalc));
+
+        setPretTotal(suma);
+  }, [cart]);
 
 
 
@@ -43,7 +43,7 @@ const Page = () => {
             <ul
                 className="flex flex-col gap-4">
                 {cart.map((produs, index) => (
-                    <ProdusCard key={index} produs={produs} index={index} functieCantitateTotala={setCantitateTotala}/>
+                    <ProdusCard key={index} produs={produs} index={index} />
                 ))}
             </ul>
             {!loadingProds
