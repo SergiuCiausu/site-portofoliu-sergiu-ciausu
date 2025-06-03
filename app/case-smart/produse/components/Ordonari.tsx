@@ -1,5 +1,6 @@
 'use client';
 
+import type { FilterValue } from '../types';
 import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
@@ -9,12 +10,6 @@ interface Ordonare {
     label: string,
     valoare: string
 }
-
-interface FilterValueObject {
-  [key: string]: FilterValue | undefined;
-}
-
-type FilterValue = string | number | FilterValueObject;
 
 interface ProductFilterProps {
     onPretFilterChange: (filters: Record<string, FilterValue | undefined>) => void;
