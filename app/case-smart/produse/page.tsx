@@ -14,9 +14,20 @@ const Page = () => {
     
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [filters, setFilters] = useState<Record<string, (string | number)[]>>({
-        pretMin: localStorage.getItem("pretMin") ? [localStorage.getItem("pretMin") as string] : [], 
-        pretMax: localStorage.getItem("pretMax") ? [localStorage.getItem("pretMax") as string] : []
+        pretMin: [], 
+        pretMax: []
     })
+
+    useEffect(() => {
+        const pretMin = localStorage.getItem("pretMin");
+        const pretMax = localStorage.getItem("pretMax");
+
+        setFilters({
+            pretMin: pretMin ? [pretMin] : [],
+            pretMax: pretMax ? [pretMax] : [],
+        });
+    }, []);
+    
     const [isSingleColorFilter, setIsSingleColorFilter] = useState<boolean>(false);
     const [products, setProducts] = useState<ProduseProps>();
 
