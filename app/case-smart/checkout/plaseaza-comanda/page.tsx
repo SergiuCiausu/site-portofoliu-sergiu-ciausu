@@ -13,7 +13,6 @@ const Page = () => {
   const router = useRouter();
 
   // const [pretTotal, setPretTotal] = useState<number>(0);
-  const [cantitateTotala, setCantitateTotala] = useState(Number(localStorage.getItem("cantitateTotala")) || 0);
 
   const pretLivrare = 14.99 * cart.length;
 
@@ -28,10 +27,9 @@ const Page = () => {
 
   useEffect(() => {
           // setPretTotal(pret());
-          setCantitateTotala(Number(localStorage.getItem("cantitateTotala")))
           localStorage.setItem("numarProduse", String(cart.length));
           localStorage.setItem("pretLivrare", String(pretLivrare));
-      }, [cart, cantitateTotala, pretLivrare]);
+      }, [cart, pretLivrare]);
   
 
   useEffect(() => {
