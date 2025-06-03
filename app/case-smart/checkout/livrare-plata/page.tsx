@@ -5,7 +5,7 @@ import ProductPageHeader from "@/app/case-smart/produse/components/ProductPageHe
 import Link from "next/link";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from "@/app/case-smart/components/Footer/Footer";
 
 // interface DateClient {
@@ -43,13 +43,23 @@ const Page = () => {
     // const [hasTyped, setHasTyped] = useState<boolean>(false);
     // const [inputErrorMessage, setInputErrorMessage] = useState<string>("");
 
-    const pretProduse = Number(localStorage.getItem("pretProduse")) || 0;
-    const pretLivrare = Number(localStorage.getItem("pretLivrare")) || 0;
-    const numarProduse = Number(localStorage.getItem("numarProduse")) || 1;
+    const [pretProduse, setPretProduse] = useState<number>(0);
+    const [pretLivrare, setPretLivrare] = useState<number>(0);
+    const [numarProduse, setNumarProduse] = useState<number>(1);
 
-    if (pretProduse <= 0) {
-        redirect("/checkout/cosul-meu");
+    useEffect(() => {
+    const storedPretProduse = Number(localStorage.getItem("pretProduse")) || 0;
+    const storedPretLivrare = Number(localStorage.getItem("pretLivrare")) || 0;
+    const storedNumarProduse = Number(localStorage.getItem("numarProduse")) || 1;
+
+    if (storedPretProduse <= 0) {
+      redirect("/checkout/cosul-meu");
     }
+
+    setPretProduse(storedPretProduse);
+    setPretLivrare(storedPretLivrare);
+    setNumarProduse(storedNumarProduse);
+  }, []);
 
     const handleCardNumberInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         let value = event.target.value;
