@@ -18,7 +18,7 @@ const page = () => {
             className={`${bodyW} mx-auto flex justify-center my-16`}>
               <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
         </div>
-        <Hero h1="Consiliul Școlar al Elevilor" p="La CȘE CNMB m-am ocupat de toată partea de PR, adică reprezentarea pe social media și comunicarea cu cadre didactice, organizatori și alte persoane terțe." img="/consiliul-scolar-al-elevilor.JPG" />
+        <Hero h1="Consiliul Școlar al Elevilor" p="La CȘE CNMB m-am ocupat de toată partea de PR, adică reprezentarea pe social media și comunicarea cu cadre didactice, organizatori și alte persoane terțe." img="/consiliul-scolar-al-elevilor.JPG" link="https://drive.google.com/file/d/1BbWQleSvGx-hsU2oLus0O6-5FfaSxNyz/view?usp=drive_link" />
         <FadeInOnLoad><div className="mb-16"><Anchor text="main"/></div></FadeInOnLoad>
         <DespreCSE />
         <PosturiOcupate />
