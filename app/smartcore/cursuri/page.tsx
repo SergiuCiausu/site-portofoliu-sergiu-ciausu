@@ -27,6 +27,7 @@ export default function Home() {
         className="flex gap-8 mt-8 w-[1120px] mx-auto">
             {cursuri.map((curs, index) => (
                 <Link
+                    key={index}
                     href={`/smartcore/cursul-${index +  1}`}
                     className="flex-33 flex flex-col p-8 card-shadow justify-between cursor-pointer">
                         <Image src={`/cursul-${index + 1}-img.jpg`} width={300} height={300} alt="curs banner" className="mb-8"></Image>
