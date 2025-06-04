@@ -1,0 +1,31 @@
+.proiect-h1 {
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.proiect-p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.proiect-btn {
+    font-family: var(--secondary-font);
+    padding: 24px 40px;
+    background-color: var(--code-detail-text-color);
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.proiect-btn-sidenote {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    opacity: 0.5;
+}

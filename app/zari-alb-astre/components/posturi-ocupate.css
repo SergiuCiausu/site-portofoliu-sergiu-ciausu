@@ -1,0 +1,13 @@
+.posturi-ocupate-h5 {
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.posturi-ocupate-p {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    color: var(--white-color);
+}
