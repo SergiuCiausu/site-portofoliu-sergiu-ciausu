@@ -13,14 +13,14 @@ const Proiecte = () => {
             descriere: "Website de „smart study” pentru elevii de liceu, cu toată materia prevăzută în programa școlară, pentru fiecare profil și specializare, cu elemente ce facilitează parcurgerea lecțiilor.",
             eticheta: "Proiect mare",
             imagine: "/edu-docs-banner.png",
-            link: "/edu-docs"
+            link: "https://github.com/SergiuCiausu/e-docs"
         },
         {
             titlu: "Case Smart",
             descriere: "Website de e-Commerce, ce vinde întrerupătoare, prize și alte produse electrice, fiind o refacere, pentru acest portofoliu, a site-ului deja existent.",
             eticheta: "Proiect complex",
             imagine: "/case-smart-banner.png",
-            link: "/case-smart"
+            link: "https://github.com/SergiuCiausu/case-smart"
         },
         {
             titlu: "Make Me Fit",
@@ -34,7 +34,7 @@ const Proiecte = () => {
             descriere: "Website de prezentare a cursurilor, acesta este proiectul pe care l-am construit pentru una dintre probele atestatului de unde am obținut certificarea de „ajutor analist programator”.",
             eticheta: "Proiect construit  în 3 zile",
             imagine: "/smartcore-banner.png",
-            link: "/smartcore"
+            link: "https://github.com/SergiuCiausu/smartcore-final"
         },
     ]
 
