@@ -1,5 +1,3 @@
-export const dynamic = 'force-dynamic'
-
 import AlegeProgram from "./Alege program/AlegeProgram";
 import HeroSection from "./components/Hero/HeroSection"
 import Perks from "./components/Perks/Perks";
