@@ -1,36 +1,32 @@
-"use client";
+import React from 'react'
+import Hero from '../zari-alb-astre/components/Hero'
+import FadeInOnLoad from '../components/FadeInOnLoad'
+import Anchor from '../components/Anchor'
+import DespreZiua from './components/DespreZiua'
+import PosturiOcupate from './components/PosturileOcupate'
+import LucrariCreate from './components/LucrariCreate'
+import ContributiileMele from './components/ContributiileMele'
+import Navbar from '../components/Navbar'
+import Ending from '../components/Ending'
+import { bodyW } from '../variables/variables'
 
-import "@/app/globals.css"
-import Hero from "./landing-page-components/Hero";
-import Anchor from "./components/Anchor";
-import FadeInOnLoad from "./components/FadeInOnLoad";
-import Proiecte from "./landing-page-components/Proiecte";
-import FadeInOnScroll from "./components/FadeInOnScroll";
-import AbilitatiTehnice from "./landing-page-components/AbilitatiTehnice";
-import ExperienteAnterioare from "./landing-page-components/ExperienteAnterioare";
-import DespreMine from "./landing-page-components/DespreMine";
-import Navbar from "./components/Navbar";
-
-export default function Home() {
-
+const page = () => {
   return (
     <div>
-      <Navbar />
-      <FadeInOnLoad><div className="my-16"><Anchor text="body" /></div></FadeInOnLoad>
-      <Hero elementId="proiecte"/>
-      <FadeInOnLoad>
-        <Anchor text="main" />
-        <Proiecte />
-      </FadeInOnLoad>
-      <FadeInOnScroll>
-        <Anchor text="main" type="end"/>
-      </FadeInOnScroll>
-      <AbilitatiTehnice />
-      <ExperienteAnterioare />
-      <DespreMine />
-      <div className="my-16"><Anchor text="section" type="end"/></div>
-      <div className="my-16"><Anchor text="main" type="end"/></div>
-      <div className="my-16"><Anchor text="body" type="end"/></div>
+        <Navbar />
+        <div
+            className={`${bodyW} mx-auto flex justify-center my-16`}>
+              <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
+        </div>
+        <Hero h1="ZIUA de Constanța" p="La ZIUA de Constanța am publicat știri și am creat un sistem pentru consolidarea eficientă a prezenței online, atât pe Facebook, cât și pe Instagram." img="/ziua-de-constanta.jpg" link="https://drive.google.com/file/d/1Gojs8HMIe3Lo8HHAVrdQUWp-Py8u4VvY/view?usp=drive_link" />
+        <FadeInOnLoad><div><Anchor text="main" /></div></FadeInOnLoad>
+        <DespreZiua />
+        <PosturiOcupate />
+        <LucrariCreate />
+        <ContributiileMele />
+        <Ending />
     </div>
-  );
+  )
 }
+
+export default page
