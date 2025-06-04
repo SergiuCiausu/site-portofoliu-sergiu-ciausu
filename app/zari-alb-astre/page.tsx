@@ -22,7 +22,7 @@ const page = () => {
             className={`${bodyW} mx-auto flex justify-center my-16`}>
               <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
         </div>
-        <Hero h1="Zări Alb Astre" p="Revista Colegiului Național „Mircea cel Bătrân” Constanța, pe care am transformat-o în prima revistă de liceu dobrogeană cu propria prezență online!" img="/zari-alb-astre-mockup-hero.png"/>
+        <Hero h1="Zări Alb Astre" p="Revista Colegiului Național „Mircea cel Bătrân” Constanța, pe care am transformat-o în prima revistă de liceu dobrogeană cu propria prezență online!" img="/zari-alb-astre-mockup-hero.png" link="https://drive.google.com/file/d/150UDBf-N6Y1jv2KTMYdWgSJxtSV5zC_9/view?usp=drive_link"/>
         <FadeInOnLoad><div className="mb-16"><Anchor text="main"/></div></FadeInOnLoad>
         <DespreZari />
         <PosturiOcupate />
