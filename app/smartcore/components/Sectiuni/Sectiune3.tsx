@@ -51,6 +51,7 @@ const Sectiune3 = () => {
                         !(index % 2)
                         ?   
                         <div
+                            key={index}
                             className="flex gap-16">
                             <div
                                 className="flex-50">
@@ -73,6 +74,7 @@ const Sectiune3 = () => {
                         </div>
                         :
                         <div
+                            key={index}
                             className="flex gap-16">
                                 <div
                                     className="flex-50">
