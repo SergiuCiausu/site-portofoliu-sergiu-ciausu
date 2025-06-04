@@ -18,7 +18,7 @@ const page = () => {
             className={`${bodyW} mx-auto flex justify-center my-16`}>
               <FadeInOnLoad><Anchor text="body" /></FadeInOnLoad>
         </div>
-        <Hero h1="ZIUA de Constanța" p="La ZIUA de Constanța am publicat știri și am creat un sistem pentru consolidarea eficientă a prezenței online, atât pe Facebook, cât și pe Instagram." img="/ziua-de-constanta.jpg" />
+        <Hero h1="ZIUA de Constanța" p="La ZIUA de Constanța am publicat știri și am creat un sistem pentru consolidarea eficientă a prezenței online, atât pe Facebook, cât și pe Instagram." img="/ziua-de-constanta.jpg" link="https://drive.google.com/file/d/1Gojs8HMIe3Lo8HHAVrdQUWp-Py8u4VvY/view?usp=drive_link" />
         <FadeInOnLoad><div><Anchor text="main" /></div></FadeInOnLoad>
         <DespreZiua />
         <PosturiOcupate />
