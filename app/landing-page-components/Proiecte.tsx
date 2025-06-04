@@ -27,7 +27,7 @@ const Proiecte = () => {
             descriere: "Website de prezentare a cursurilor, axat mai mult pe design web și nu pe conținutul cursurilor sau funcționalități complexe.",
             eticheta: "Proiect estetic ;)",
             imagine: "/make-me-fit-banner.png",
-            link: "/make-me-fit"
+            link: "https://github.com/SergiuCiausu/make-me-fit"
         },
         {
             titlu: "Smartcore",
