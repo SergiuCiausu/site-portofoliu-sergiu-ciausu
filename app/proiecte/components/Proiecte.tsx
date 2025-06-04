@@ -69,7 +69,7 @@ const Proiecte = () => {
             javascript: 1.1, 
             liniiCod: 250,
             imagine: "/smartcore-banner.png",
-            link: "/smartcore"
+            link: "https://github.com/SergiuCiausu/smartcore-final"
         },
     ]
 
