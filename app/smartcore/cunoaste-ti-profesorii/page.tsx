@@ -25,6 +25,7 @@ const page = () => {
         index % 2 
         ?
         <div
+          key={index}
           className="flex gap-8 w-[1120px] mx-auto mb-16">
           <div
             className="flex-50">
@@ -40,6 +41,7 @@ const page = () => {
         </div>
         : 
         <div
+          key={index}
           className="flex gap-8 w-[1120px] mx-auto mb-16">
             <div
                 className="flex-50 flex flex-col gap-2">
