@@ -19,6 +19,7 @@ const Sectiune2 = () => {
                 className="flex gap-4">
               {metode.map((metoda, index) => (
                 <div
+                    key={index}
                     className="flex flex-col items-center justify-between gap-4">
                       <div
                         className="flex-50 flex items-end">
