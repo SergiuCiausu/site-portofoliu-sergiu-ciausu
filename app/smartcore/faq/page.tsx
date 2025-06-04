@@ -39,6 +39,7 @@ export default function Home() {
         className="w-[1120px] mx-auto flex flex-col gap-8 mb-16">
         {cursuri.map((curs, index) => (
             <div
+                key={index}
                 className="card-shadow p-8 flex flex-col gap-8" style={{ borderRadius: "16px" }}>
                     <div
                         className="flex gap-4 cursor-pointer"  onClick={() => setIntrebareActiva(intrebareActiva === index ? -1 : index)}>
