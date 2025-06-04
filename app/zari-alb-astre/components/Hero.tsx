@@ -6,7 +6,7 @@ import "./hero.css"
 import Link from 'next/link'
 import Image from "next/image"
 
-const Hero = ({ h1, p, img } : { h1: string, p: string, img: string }) => {
+const Hero = ({ h1, p, img, link } : { h1: string, p: string, img: string, link: string }) => {
   return (
     <FadeInOnLoad>
         <section
@@ -22,7 +22,7 @@ const Hero = ({ h1, p, img } : { h1: string, p: string, img: string }) => {
                         className="proiect-p">
                         {p}
                     </p>
-                    <Link href="/"><button className="mt-10 proiect-btn">Descarcă studiu de caz</button></Link>
+                    <Link href={link}><button className="mt-10 proiect-btn">Descarcă studiu de caz</button></Link>
                     <p
                         className="mt-2 proiect-btn-sidenote">
                             sau vezi prezentarea de mai jos
