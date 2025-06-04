@@ -60,8 +60,8 @@ const Sectiune3 = () => {
                                     {formulare_beneficii}
                                     <ul
                                         className="list-disc list-inside ps-16">
-                                        {curs.beneficii.map(beneficiu =>(
-                                            <li>{beneficiu}</li>
+                                        {curs.beneficii.map((beneficiu, indexB) =>(
+                                            <li key={indexB}>{beneficiu}</li>
                                         ))}
                                     </ul>
                                 </p>
@@ -87,8 +87,8 @@ const Sectiune3 = () => {
                                         {formulare_beneficii}
                                         <ul
                                             className="list-disc list-inside ps-16">
-                                            {curs.beneficii.map(beneficiu =>(
-                                                <li>{beneficiu}</li>
+                                            {curs.beneficii.map((beneficiu, indexB) =>(
+                                                <li key={indexB}>{beneficiu}</li>
                                             ))}
                                         </ul>
                                     </p>
