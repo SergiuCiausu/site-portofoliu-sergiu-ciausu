@@ -24,7 +24,7 @@ const Proiecte = () => {
             javascript: 5, 
             liniiCod: 5000,
             imagine: "/edu-docs-banner.png",
-            link: "/edu-docs"
+            link: "https://github.com/SergiuCiausu/e-docs"
         },
         {
             titlu: "Case Smart",
@@ -39,7 +39,7 @@ const Proiecte = () => {
             javascript: 2, 
             liniiCod: 1000,
             imagine: "/case-smart-banner.png",
-            link: "/case-smart"
+            link: "https://github.com/SergiuCiausu/case-smart"
         },
         {
             titlu: "Make Me Fit",
