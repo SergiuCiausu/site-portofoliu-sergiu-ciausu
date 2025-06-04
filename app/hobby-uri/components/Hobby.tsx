@@ -39,7 +39,7 @@ const Hobby = () => {
         {hobby.map((hobby, index) => (
             index % 2 
             ?
-                <FadeInOnScroll>
+                <FadeInOnScroll key={index}>
                     <div
                         className={`${bodyW} flex flex-row-reverse justify-between gap-16 mb-16`}>
                         <div
@@ -59,7 +59,7 @@ const Hobby = () => {
                     </div>
                 </FadeInOnScroll>
             :
-            <FadeInOnScroll>
+            <FadeInOnScroll key={index}>
                 <div
                     key={index}
                     className={`${bodyW} flex gap-16 items-center justify-between mb-16`}>
