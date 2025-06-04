@@ -10,13 +10,23 @@ const Educatie = () => {
 
     const contributii = [
         {
+            perioada: "01.11.2024 - 15.11.2024",
+            curs: "Reponsive Web Design, freeCodeCamp",
+            contributii: [
+                "Programarea unei aplicații web folosind HTML, CSS, JavaScript, React.js, Redux, Bootstrap și Tailwind CSS",
+                "Bazele limbajelor de programare folosite pentru construirea unui site funcțional, optimizat și cu o experiență plăcută pentru utilizatori",
+                "Crearea unor componente esențiale unui site, precum bara de navigație, hero section, pagină „despre noi”, coș de cumpărături, etc."
+            ],
+            link: "https://drive.google.com/file/d/1E37pNWMxpnxg9FykNuF07iT8qEb3lBIJ/view?usp=drive_link"
+        },
+        {
             perioada: "30.07.2022 - 10.08.2022",
             curs: "Magazine Layout & Professional Design Using Indesign CC, Udemy",
             contributii: [
                 "Bazele de tehnoredactare ale unei reviste, precum și de utilizare a programului Adobe Indesign, alături de tehnici de stilizare globală a conținutului pentru lucrul cu multiple pagini;",
                 "Standardele industriei pentru așezarea în pagină a conținutului unei reviste, al unui document ce cuprinde lucrări de portofoliu sau al unei prezentări către un client.",
             ],
-            link: "https://www.udemy.com/course/magazine-layout-using-indesign/"
+            link: "https://drive.google.com/file/d/1CBsVctDzMqSLw35tBHcuSaXbksGnPSSf/view?usp=drive_link"
         },
         {
             perioada: "30.12.2021 - 26.01.2022",
@@ -26,7 +36,7 @@ const Educatie = () => {
                 "Tehnici avansate de editare și manipulare foto, precum: blending, retouching, corecții de culoare prin suprapunerea layerelor, efecte predefinite, editarea GIF, crearea efectului de paralaxă, compunerea de mock-up-uri, etc.",
                 "Noțiuni de controlare a setărilor aplicației și de alocare de resurse hardware."
             ],
-            link: "https://www.udemy.com/course/adobe-photoshop-cc-advanced-training-course-tutorial/"
+            link: "https://drive.google.com/file/d/1ZPq5CqKTscZF-ItYH_SOX6Sn3ncDmn8e/view?usp=drive_link"
         },
         {
             perioada: "09.11.2021 - 21.11.2021",
@@ -45,7 +55,7 @@ const Educatie = () => {
                 "Cele mai bune practici de export, învățând despre termeni precum Dots Per Inch/ Points Per Inch, rezoluție, diferențele dintre formatul JPG vs. PNG;",
                 "Să lucrez rapid și să mă simt confortabil în mediul Photoshop.",
             ],
-            link: "https://www.udemy.com/course/adobe-photoshop-cc-essentials-training-course/"
+            link: "https://drive.google.com/file/d/1sGXfeEAPmxopwpN7E62NFVZLKyV6QvDy/view?usp=drive_link"
         },
         {
             perioada: "22.11.2021 - 30.12.2021",
@@ -55,7 +65,7 @@ const Educatie = () => {
                 "Noțiuni avansate din jargonul unui editor video, precum A-roll sau B-roll, dar și tehnici avansate de producție, precum stabilizarea videoclipurilor, generarea de subtitrări cu AI, personalizarea animațiilor de orice fel, comutarea cu Adobe After Effects, etc.;",
                 "Noțiuni de controlare a setărilor aplicației și de alocare de resurse hardware."
             ],
-            link: "https://www.udemy.com/course/adobe-premiere-pro-cc-advanced-training-course/"
+            link: "https://drive.google.com/file/d/1SIR5qarBCHGQfadG7wbh1ho1raQRifKK/view?usp=drive_link"
         },
         {
             perioada: "22.10.2021 - 09.11.2021",
@@ -64,7 +74,7 @@ const Educatie = () => {
                 "Bazele utilizării aplicației Premiere Pro, prin producerea a 10 proiecte fundamentale, prin care am învățat elemente esențiale pentru compunerea unui videoclip, pentru reprezentarea unor culori vibrante, potrivite evenimentului în cauză, corectarea secvențelor audio ale videoclipurilor și îmbunătățirea acestora pentru evocarea sentimentelor dorite;",
                 "Explorarea fiecărui efect de corectarea a culorilor și a luminilor.",
             ],
-            link: "https://www.udemy.com/course/adobe-premiere-pro-cc-essentials-training-course/"
+            link: "https://drive.google.com/file/d/11RtH3_qlPMRBlf-JhhJzUTlJOPxWgJw2/view?usp=drive_link"
         },
         {
             perioada: "30.12.2021 - 27.01.2022",
@@ -106,7 +116,7 @@ const Educatie = () => {
                     ]
                 },
             ],
-            link: "https://www.udemy.com/course/ui-ux-web-design-using-adobe-xd/"
+            link: "https://drive.google.com/file/d/11VSj_pE-OeZ5jV4wONGgkjJs_1oEQInq/view?usp=drive_link"
         },
         {
             perioada: "18.03.2022 - 19.04.2022",
@@ -148,7 +158,7 @@ const Educatie = () => {
                     ]
                 },
             ],
-            link: "https://www.udemy.com/course/figma-ux-ui-design-user-experience-tutorial-course/"
+            link: "https://drive.google.com/file/d/1ByjSd4C6kk18Px6VxZ_dhwHwzGM9k8Nn/view?usp=drive_link"
         },
         {
             perioada: "22.10.2021 - 05.11.2021",
@@ -157,7 +167,7 @@ const Educatie = () => {
                 "Bazele utilizării programului After Effects, precum: lucrul cu compoziții, animații de mișcare, manipularea velocității animațiilor, lucrul cu tabele Excel și documente CSV în After Effects, crearea unei animații 3D „înregistrată” din unghiuri multiple, etc.;",
                 "Efecte avansate de animare, precum monitorizarea unui punct de mișcare (camera tracking), generarea de diagrame moderne, interactive, animarea unei iconițe, etc.",
             ],
-            link: "https://www.udemy.com/course/animated-infographic-video-data-visualisation/"
+            link: "https://drive.google.com/file/d/1u0AtcsuKBp6H1I94mBJJ8ubahSAbeGhp/view?usp=drive_link"
         },
         {
             perioada: "16.06.2022 - 29.07.2022",
@@ -172,7 +182,7 @@ const Educatie = () => {
                 "Psihologia culorilor, a font-urilor, a spațierilor, a așezărilor în pagină și a totalității și diversității contrastelor;",
                 "Teoria culorilor, tehnici de construire a paletelor de culori profesionale și selectarea culorilor potrivite în funcție de sistemul de redare al culorilor care va fi folosit (RGB/ CMYK)."
             ],
-            link: "https://www.udemy.com/course/graphic-design-masterclass-the-next-level/"
+            link: "https://drive.google.com/file/d/1LoqI_A9SY1bS7ULUS5RXepMF244pxNzX/view?usp=drive_link"
         },
         {
             perioada: "29.05.2022 - 15.06.2022",
@@ -184,7 +194,7 @@ const Educatie = () => {
                 "Tipuri de stiluri pentru postări pe social media, precum: postări de tip citat/ short-form, postări carusel/ medium-form, postări de anunțare a unui eveniment, precum și pregătirea unei campanii de social media marketing;",
                 "Lucrul cu vectori în Illustrator."
             ],
-            link: "https://www.udemy.com/course/graphic-design-masterclass-everything-you-need-to-know/"
+            link: "https://drive.google.com/file/d/1EYnOtM0tK7wLxfbiPhVar2mU0-oD0UCR/view?usp=drive_link"
         },
         {
             perioada: "29.07.2022 - 20.08.2022",
@@ -194,7 +204,7 @@ const Educatie = () => {
                 "Combinarea imaginilor cu culori, font-uri, vectori și spațieri pentru redarea vocii și mesajului de brand dorite;",
                 "Utilizarea platformei Behance pentru prezentarea portofoliului."
             ],
-            link: "https://www.udemy.com/course/the-branding-masterclass-the-entire-brand-design-process/"
+            link: "https://drive.google.com/file/d/1oE7CWjpNH58YgNptmKDhxzHA5TvsoCdg/view?usp=drive_link"
         },
         {
             perioada: "15.09.2012 - 15.06.2017",
