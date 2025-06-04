@@ -54,7 +54,7 @@ const Proiecte = () => {
             javascript: 7, 
             liniiCod: 500,
             imagine: "/make-me-fit-banner.png",
-            link: "/make-me-fit"
+            link: "https://github.com/SergiuCiausu/make-me-fit"
         },
         {
             titlu: "Smartcore",
