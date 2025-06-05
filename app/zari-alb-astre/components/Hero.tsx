@@ -10,7 +10,7 @@ const Hero = ({ h1, p, img, link } : { h1: string, p: string, img: string, link:
   return (
     <FadeInOnLoad>
         <section
-            className={`${bodyW} flex items-center gap-8`}>
+            className={`${bodyW} flex gap-8`}>
                 <div
                     className="w-3/5">
                     <div className="mb-2"><Anchor text="header"/></div>
