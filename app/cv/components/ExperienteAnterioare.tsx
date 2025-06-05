@@ -126,7 +126,7 @@ const ExperienteAnterioare = () => {
             <ol
                 className="list-decimal ml-4">
                     {contributie.contributii.map((bullet, indexBullet) => (
-                        bullet.subcontributii 
+                        typeof bullet !== 'string'
                         ? 
                             <div
                                 key={indexBullet}>
@@ -134,7 +134,7 @@ const ExperienteAnterioare = () => {
                                 <ol 
                                     className="list-decimal ml-12">
                                     {bullet.subcontributii.map((subcontributie, indexSub) => (
-                                            subcontributie.subsubcontributii 
+                                            typeof subcontributie !== 'string'
                                                 ? 
                                                     <div
                                                         key={indexSub}>
